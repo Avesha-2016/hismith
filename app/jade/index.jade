@@ -1,0 +1,86 @@
+include layout/section
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
+        title HiSmith task
+        link(rel="stylesheet" href="css/lib.min.css")
+        link(rel="stylesheet" href="css/style.min.css")
+    body
+        nav.menu
+            ul.menu__block
+                li.menu__item
+                    a.menu__link(href='#screen_1') 1
+                li.menu__item
+                    a.menu__link(href='#screen_2') 2
+                li.menu__item
+                    a.menu__link(href='#screen_3') 3
+                li.menu__item
+                    a.menu__link(href='#screen_4') 4
+                li.menu__item
+                    a.menu__link(href='#screen_5') 5
+        +section({
+            sectionId: 'screen_1',
+            sectionClass: 'section--one',
+            link: '#',
+            linkText: 'пропустить и перейти к проекту',
+            title: '',
+            text: '',
+            contentLink: '',
+            contentLinkText: '',
+            footerLink: '#screen_2',
+            footerLinkText: 'scroll down'
+        })
+        +section({
+            sectionId: 'screen_2',
+            sectionClass: 'section--two',
+            link: '#',
+            linkText: 'пропустить и перейти к проекту',
+            title: '7',
+            text: 'снижение<br>проходного<br>барьера',
+            contentLink: '',
+            contentLinkText: '',
+            footerLink: '#screen_3',
+            footerLinkText: 'scroll down'
+        })
+        +section({
+            sectionId: 'screen_3',
+            sectionClass: 'section--three',
+            link: '#',
+            linkText: 'пропустить и перейти к проекту',
+            title: 'В 2016 году проходной барьер для партий снижен с 7 до 5% голосов избирателей, принявших участие в выборах.',
+            text: 'В 2016 году проходной барьер для партий снижен с 7 до 5% голосов избирателей, принявших участие в выборах.',
+            contentLink: '',
+            contentLinkText: '',
+            footerLink: '#screen_4',
+            footerLinkText: 'scroll down'
+        })
+        +section({
+            sectionId: 'screen_4',
+            sectionClass: 'section--four',
+            link: '#',
+            linkText: 'пропустить и перейти к проекту',
+            title: 'Кандидатам в одномандатных округах достаточно набрать простое большинство голосов.',
+            text: 'Исключена предусмотренная на выборах 2011 года норма о том, что партии, набравшие от 5 до 7% голосов, также могут получить одно или два места в парламенте.',
+            contentLink: '',
+            contentLinkText: '',
+            footerLink: '#screen_5',
+            footerLinkText: 'scroll down'
+        })
+        +section({
+            sectionId: 'screen_5',
+            sectionClass: 'section--five',
+            link: '#',
+            linkText: 'пропустить и перейти к проекту',
+            title: 'Кандидатам в одномандатных округах достаточно набрать простое большинство голосов.',
+            text: 'Исключена предусмотренная на выборах 2011 года норма о том, что партии, набравшие от 5 до 7% голосов, также могут получить одно или два места в парламенте.',
+            contentLink: '#',
+            contentLinkText: 'Следующая особенность <span>&rarr;</span>',
+            footerLink: '',
+            footerLinkText: ''
+        })
+        script(src="js/libs.min.js")
+        script(src="js/common.min.js")

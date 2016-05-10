@@ -1,0 +1,32 @@
+html {
+  font-size: 10px;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:focus, a:hover, a:active {
+  text-decoration: none;
+}
+body {
+  color: $black;
+  font-size: 1.4rem;
+  font-family: "Rubik", "Helvetica", sans-serif;
+  line-height: 1.2;
+  min-width: 310px;
+}
+
+.bold_text {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.italic_text {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.bold_italic {
+  font-weight: bold;
+  font-style: italic;
+}

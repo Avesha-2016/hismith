@@ -1,0 +1,18 @@
+mixin section(text)
+    section(id=text.sectionId, class='section '+text.sectionClass)
+        header.heading
+            img.heading__img(src="img/logo.png", alt="HiSmith")
+            a.heading__link(href=text.link)= text.linkText
+        if text.title
+            .section__title!= text.title
+        if text.text
+            .section__text!= text.text
+        if text.contentLink
+            .section__link-wrapper
+                a.section__link(href=text.contentLink)!= text.contentLinkText
+        .objects
+            include weigher.svg
+        if text.footerLink
+            .footer__link-wrapper
+                a.footer__link(href=text.footerLink)= text.footerLinkText
+            footer.footer

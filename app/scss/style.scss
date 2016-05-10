@@ -1,0 +1,19 @@
+/**
+ * Created by MoHax on 19.03.2016.
+ */
+$white: #fff;
+$whitedark: #f2f2f2;
+$gray: #666;
+$black: #000;
+$section: #E8E185;
+$section-footer: #E5CB5C;
+$text: #2E3E55;
+$text-number: #E7D368;
+
+@import "modules/fonts";
+@import "modules/base";
+@import "modules/menu";
+@import "modules/objects";
+@import "modules/content";
+@import "modules/media";
+

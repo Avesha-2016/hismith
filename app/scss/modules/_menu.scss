@@ -1,0 +1,44 @@
+// меню
+.menu {
+  position: fixed;
+  left: 30px;
+  height: 100%;
+  z-index: 10;
+}
+
+.menu__block {
+  width: 80px;
+  margin: 236px 0 0 7px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.menu__item {
+  margin: 10px 0;
+}
+
+.menu__link {
+  display: block;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  color: #2F7092;
+}
+
+.menu__link--active, .menu__link:hover {
+  background: $white;
+  color: #EC1111;
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 130%;
+    top: 14px;
+    width: 30px;
+    height: 2px;
+    background: $white;
+  }
+}
