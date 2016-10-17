@@ -1,6 +1,6 @@
 #HiSmith
 
-[посмотреть на хостинге](http://hismith.alteriko.ru/)
+[посмотреть на хостинге](http://project.someonedev.ru/hismith/)
 
 Gulp, jade, scss, нэйминг по БЭМ.
 
